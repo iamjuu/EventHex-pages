@@ -1,7 +1,8 @@
 import { Container, ContainerWrap } from "../style";
 import { Main } from "./style";
-import { Logo } from "../../../assets";
+import { Logo, User } from "../../../assets";
 import RegisterBtn from "../../../components/button";
+import Form from "../../../components/form";
 const index = () => {
   return (
     <Container>
@@ -18,10 +19,31 @@ const index = () => {
                   btnName="Register"
                   color="black"
                   border="1px solid #DADCE0"
-                  fontsize="1rem"
+                  fontsize="14px"
                   radius="5px"
                 />
               </div>
+            </div>
+
+            <div className="second">
+              <div className="user-div">
+                <div className="user">
+                  <div>
+                    <img src={User} alt="" />
+                  </div>
+                </div>
+                <div>
+                  <h1>Login in your account</h1>
+                  <p style={{ color: "#525866" }}>
+                    Enter your details to login.
+                  </p>
+                </div>
+              </div>
+
+              <div className="form">
+                <Form />
+              </div>
+              <div></div>
             </div>
           </div>
 

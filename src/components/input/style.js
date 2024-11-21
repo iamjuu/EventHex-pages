@@ -1,15 +1,11 @@
 import styled from "styled-components";
-export const Button = styled.button`
-  padding: 5px;
+export const Input = styled.input`
+box-sizing: border-box;
+padding:8px ;
   background-color: ${(props) => props.bg || "transparent"};
   color: ${(props) => props.color || ""};
   border: ${(props) => props.border || "none"};
-  width: ${(props) => props.width || "auto"};
-  font-size: ${(props) => props.fontsize || "inherit"};
+  width: ${(props) => props.width || ""};
+  font-size: ${(props) => props.fontsize || ""};
   border-radius: ${(props) => props.radius || "0"};
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.9;
-  }
-`;
+`
