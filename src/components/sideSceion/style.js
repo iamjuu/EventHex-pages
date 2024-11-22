@@ -1,12 +1,15 @@
 import styled from "styled-components";
 export const Main = styled.div`
-width: 50%;
+width: 80%;
 /* background-color: green; */
 display: flex;
 justify-content: center;
 flex-direction: column;
 align-items: center;
 border-radius: 16px;
+@media (max-width:425px) {
+   width: 100%;
+}
 .first{
     display: flex;
     width: 100%;

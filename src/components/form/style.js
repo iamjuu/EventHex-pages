@@ -7,12 +7,11 @@ export const Form =styled.form`
         flex-direction: column;
         display: flex;
 
-
 `
-
 export const Main = styled.div`
 width:100%;
 display: flex;
+padding: 10px;
 justify-content: left;
 font-size: 12px;
 font-family: sans-serif;
