@@ -3,33 +3,34 @@ export const Main = styled.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+
+
   .left {
     width: 40%;
     display: flex;
     gap: 40px;
     flex-direction: column;
+  
 
     .first {
       display: flex;
       font-family: sans-serif;
+/* padding: 10px; */
       width: 100%;
       justify-content: center;
-
-      .logo {
-        width: 20%;
-        display: flex;
+      .logo{
         padding: 10px;
-        img {
-          width: 30%;
-        }
+        width: 10%;
+        display: flex;
       }
+
       .register-div {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
         font-size: 14px;
-        width: 80%;
+        width: 70%;
       }
     }
     .second {
@@ -39,51 +40,27 @@ justify-content: center;
       align-items: center;
       gap: 10px;
       flex-direction: column;
-      .user-div {
+      .user-div{
         display: flex;
-        gap: 20px;
         justify-content: center;
-        align-items: center;
         flex-direction: column;
-        width: 100%;
-    .user{
-        display: flex;
-        justify-content: center;
         align-items: center;
-        border-radius: 50%;
-                background: linear-gradient(10deg, rgba(255,255,255,1) 31%, rgba(192,192,192,1) 100%);
-        width: 88px;
-        height: 88px;
-        &> :nth-child(1){
-            width: 70px;
-            height: 70px;
-            border: 1px solid #E2E4E9;
-            display: flex;
-            background-color: white;
-            border-radius: 50%;
-        justify-content: center;
-        align-items: center;
-        }
-    }
-    &>:nth-child(2){
-        font-family: sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 10px;
-        p{
+        gap: 8px;
+          h1{
+            font-family: sans-serif;
+            font-size: 24px;
+          }
+          p{
+            font-family: sans-serif;
             font-size: 16px;
             color: #525866;
+          
+          
         }
-        h1{
-            font-size: 24px;
-        }
-    }
       }
-  
     }
-    @media (max-width: 768px) {
+  
+    /* @media (max-width: 768px) {
       width: 100%;
       .first .logo {
         img {
@@ -92,6 +69,9 @@ justify-content: center;
       }
     }
     @media (max-width: 768px) {
+      .first .logo{
+        width: 20%;
+      }
       .first .register-div {
         font-size: 0.8rem;
       }
@@ -105,10 +85,23 @@ justify-content: center;
       .first .register-div {
         font-size: 0.7rem;
       }
-    }
+    } */
+      @media (max-width:768px) {
+        width: 100%;
+        
+      }
   }
 
   .right {
     width: 60%;
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:768px) {
+      width: 100%;
+      
+    }
+
   }
 `;

@@ -7,10 +7,14 @@ export const Form =styled.form`
         flex-direction: column;
         display: flex;
 
-.copy{
-    font-size: 12px;
-    color: #525866;
-    display: flex; 
-    gap: 5px;
-}
+
+`
+
+export const Main = styled.div`
+width:100%;
+display: flex;
+justify-content: left;
+font-size: 12px;
+font-family: sans-serif;
+
 `

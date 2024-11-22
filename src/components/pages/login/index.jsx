@@ -3,6 +3,9 @@ import { Main } from "./style";
 import { Logo, User } from "../../../assets";
 import RegisterBtn from "../../../components/button";
 import Form from "../../../components/form";
+import Badge from '../../badge'
+import FromFooter from '../../form/formFooter'
+import RightSide from '../../sideSceion'
 const index = () => {
   return (
     <Container>
@@ -26,34 +29,30 @@ const index = () => {
             </div>
 
             <div className="second">
+              <Badge/>
               <div className="user-div">
-                <div className="user">
-                  <div>
-                    <img src={User} alt="" />
-                  </div>
-                </div>
-                <div>
+                
                   <h1>Login in your account</h1>
-                  <p style={{ color: "#525866" }}>
+                  <p>
                     Enter your details to login.
                   </p>
-                </div>
+          
               </div>
 
               <div className="form">
                 <Form />
               </div>
-              <div></div>
+
             </div>
+<div className="third">
+              <FromFooter/>
+</div>
+
           </div>
 
           <div className="right">
-            <h4>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ad
-              ducimus eaque. Laborum at voluptas ducimus quos adipisci, eos
-              atque, quaerat laudantium minus dolorem fugiat quae facilis non
-              eum nobis.
-            </h4>
+
+            <RightSide/>
           </div>
         </Main>
       </ContainerWrap>
