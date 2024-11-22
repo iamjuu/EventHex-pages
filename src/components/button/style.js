@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const Button = styled.button`
-  padding: 5px;
+  padding: ${(props)=>props.padding||'5px'};
   background-color: ${(props) => props.bg || "transparent"};
   color: ${(props) => props.color || ""};
   border: ${(props) => props.border || "none"};

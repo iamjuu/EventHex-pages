@@ -3,9 +3,9 @@ import { Main } from "./style";
 import { Logo, User } from "../../../assets";
 import RegisterBtn from "../../../components/button";
 import Form from "../../../components/form";
-import Badge from '../../badge'
-import FromFooter from '../../form/formFooter'
-import RightSide from '../../sideSceion'
+import Badge from "../../badge";
+import FromFooter from "../../form/formFooter";
+import RightSide from "../../sideSceion";
 const index = () => {
   return (
     <Container>
@@ -29,30 +29,23 @@ const index = () => {
             </div>
 
             <div className="second">
-              <Badge/>
+              <Badge img={User} />
               <div className="user-div">
-                
-                  <h1>Login in your account</h1>
-                  <p>
-                    Enter your details to login.
-                  </p>
-          
+                <h1>Login in your account</h1>
+                <p>Enter your details to login.</p>
               </div>
 
               <div className="form">
                 <Form />
               </div>
-
             </div>
-<div className="third">
-              <FromFooter/>
-</div>
-
+            <div className="third">
+              <FromFooter />
+            </div>
           </div>
 
           <div className="right">
-
-            <RightSide/>
+            <RightSide />
           </div>
         </Main>
       </ContainerWrap>

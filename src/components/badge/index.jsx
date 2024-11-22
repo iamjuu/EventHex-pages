@@ -1,13 +1,11 @@
 import React from 'react';
 import {Main} from './style'
-import { Logo, User } from "../../assets";
-
-const index = () => {
+const index = ({img}) => {
   return (
     <Main>
 <div className='user-div'>
   <div className='logo'>
-<img src={User} alt="" />
+<img src={img} alt="" />
   </div>
 </div>
     </Main>

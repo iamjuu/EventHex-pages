@@ -2,43 +2,23 @@ import React from "react";
 import { CiClock2 } from "react-icons/ci";
 import SeeBtn from "../button";
 import { Main } from "./style";
-import Gauge from "react-gauge-chart";
-
+import Graph from '../../components/graph'
 const index = () => {
   return (
     <Main>
       <div className="first">
-        <div>
+        <div className="head">
+          <div className="clock">
           <CiClock2 />
-          <span>Time Off</span>
-        </div>
-        <div>
-          <SeeBtn border={"1px solid #525866"} btnName={"See all"} />
-        </div>
-      </div>
-
-      
-      <div>
-        <Gauge
-          width={100}
-          height={100}
-          value={60}
-          startAngle={-90}
-          endAngle={90}
-        />
-      </div>
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <div>
-          <div>
-            <span>
-              <CiClock2 />
-            </span>
-            <span> july 15,2019</span>
+           <span>Time Off</span>
           </div>
-          <span>(Casual)</span>
-          <SeeBtn btnName={"pending"} />
+        <div className="btn">
+          <SeeBtn border={"1px solid rgba(226, 228, 233, 1)"} btnName={"See all"}  radius={'8px'}/>
+        </div>
         </div>
       </div>
+<Graph/>
+      
     </Main>
   );
 };
