@@ -1,5 +1,5 @@
 import { Container, ContainerWrap } from "../style";
-import { Main } from "./style";
+import { Main } from "../login/style";
 import { Logo, User } from "../../../assets";
 import RegisterBtn from "../../../components/button";
 import Form from "../../../components/form";

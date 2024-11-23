@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import {Google} from '../../assets'
 export const Form =styled.form`
      width: 100%;
+     justify-content: center;
+     align-items: center;
         font-family: sans-serif;
-        gap: 20px;
         flex-direction: column;
+        gap: 10px;
         display: flex;
 
 `
@@ -15,5 +16,19 @@ padding: 10px;
 justify-content: left;
 font-size: 12px;
 font-family: sans-serif;
+
+`
+
+export const FromContainer = styled.div`
+display: flex;
+width: 80%;
+gap: 10px;
+flex-direction: column;
+justify-content: center;
+.form-footer{
+        display: flex;
+flex-direction: column;
+gap: 20px;
+}
 
 `

@@ -3,10 +3,15 @@ export const Card = styled.div`
   background: white;
   border-radius: 12px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
   max-width: 400px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   .btn-section {
-    padding: 16px;
+    width: 100%;
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
@@ -14,22 +19,34 @@ export const Card = styled.div`
     .first {
       width: 100%;
       display: flex;
+      justify-content: space-between;
+      gap: 10px
+      ;
       border-top: 1px solid #DADCE0 ;
 padding-top: 10px;
       justify-content: space-between;
       .clock {
+        width: 80%;
         gap: 10px;
         display: flex;
-        justify-content: center;
+        padding: 5px;
+        /* justify-content: center; */
         align-items: center;
+      }
+      .btn{
+        width: 50%;
+        display: flex;
+        justify-content: end;
+        padding: 5px;
       }
     }
   }
 `;
 export const Header = styled.div`
-width: 100%;
+width: 80%;
 display: flex;
 font-family: sans-serif;
+border-bottom: 1px solid rgba(226, 228, 233, 1);
 .header-left{
 padding: 10px;
   display: flex;

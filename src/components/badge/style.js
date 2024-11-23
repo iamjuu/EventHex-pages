@@ -3,6 +3,7 @@ export const Main = styled.div`
 width: 100%;
 display: flex;
 justify-content: center;
+flex-direction: column;
 align-items: center;
 .user-div {
     
@@ -25,5 +26,24 @@ align-items: center;
     border: 1px solid #E2E4E9;
 }
    
+      }
+      .content{
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        span{
+            font-weight: none;
+            font-size: 24px;
+
+      }
+P{
+    font-size: 16px;
+    color: rgba(82, 88, 102, 1);
+}
       }
 `

@@ -70,16 +70,18 @@ const ProgressCard = ({ radius = 70, usedDays = 10, totalDays = 20 }) => {
           <div key={index} className="first">
             <div className="clock">
               <CiClock2 />
-              <span>{item.date}</span>
-              <span>{item.label}</span>
+              <span  style={{fontSize:'14px'}}>{item.date}</span>
+              <span  style={{fontSize:'12px', color:'rgba(134, 140, 152, 1)' }}>{item.label}</span>
             </div>
+            <div className="btn">
             <Btns
               padding={"7px"}
               btnName={item.buttonState}
-              fontsize={"16px"}
+              fontsize={"12px"}
               bg={item.bgcolor}  
               radius={"50px"}
-            />
+              />
+              </div>
           </div>
         ))}
       </div>

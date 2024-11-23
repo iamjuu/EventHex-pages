@@ -13,11 +13,11 @@ export const Main = styled.div`
   
 
     .first {
+
       display: flex;
       font-family: sans-serif;
-/* padding: 10px; */
       width: 100%;
-      justify-content: center;
+      justify-content: space-between;
       .logo{
         padding: 10px;
         width: 10%;
@@ -25,6 +25,7 @@ export const Main = styled.div`
       }
 
       .register-div {
+        padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -37,8 +38,7 @@ export const Main = styled.div`
       width: 100%;
 justify-content: center;
       display: flex;
-      align-items: center;
-      gap: 10px;
+      gap: 20px;
       flex-direction: column;
       .user-div{
         display: flex;
