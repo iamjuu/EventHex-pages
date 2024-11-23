@@ -39,7 +39,9 @@ export const Main = styled.div`
 justify-content: center;
       display: flex;
       gap: 20px;
+      align-items: center;
       flex-direction: column;
+      /* background-color: red; */
       .user-div{
         display: flex;
         justify-content: center;

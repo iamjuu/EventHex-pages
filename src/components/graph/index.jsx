@@ -13,22 +13,9 @@ import {
   Header
 } from "./style";
 
-const data = [
-  {
-    date: "July 15, 2019",
-    label: "Caroseal",
-    bgcolor: 'rgba(251, 223, 177, 1)',
-    buttonState: "pending"
-  },
-  {
-    date: "July 15, 2019",
-    label: "Caroseal",
-    bgcolor: 'rgba(203, 245, 229, 1)',
-    buttonState: "confirmed"
-  }
-];
 
-const ProgressCard = ({ radius = 70, usedDays = 10, totalDays = 20 }) => {
+
+const ProgressCard = ({ radius = 70, usedDays = 10, totalDays = 20,data }) => {
   const circumference = 2 * Math.PI * radius; 
   const progress = (usedDays / totalDays) * circumference; 
   const strokeDasharray = `${progress} ${circumference - progress}`;

@@ -8,13 +8,20 @@ import FromFooter from "../../form/formFooter";
 import RightSide from "../../sideSceion";
 const index = () => {
 
-  const formFields = [
+  const fields = [
     { label: 'Email Address*', type: 'text', placeholder: 'hello@alignui.com' },
     { label: 'Password*', type: 'password', placeholder: 'password' },
-    { label: 'Password*', type: 'password', placeholder: 'password' },
-
-
+    {
+      type: 'checkbox',
+      label: 'Keep me logged in',
+      additionalElement: {
+        type: 'link',
+        label: 'Forgot password?',
+        link: '/reset-password',
+      },
+    },
   ];
+  
   return (
     <Container>
       <ContainerWrap>
@@ -39,7 +46,7 @@ const index = () => {
             <div className="second">
               <Badge img={User} span={'Login in your account'} p={'Enter your details to login.'} />
               <div className="form">
-              <Form fields={formFields} />
+              <Form fields={fields} />
               </div>
             </div>
             <div className="third">

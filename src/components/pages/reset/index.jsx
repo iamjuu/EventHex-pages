@@ -9,9 +9,8 @@ import RightSide from "../../sideSceion";
 const index = () => {
 
   const formFields = [
-    { label: 'Email Address*', type: 'text', placeholder: 'hello@alignui.com' },
-    { label: 'Password*', type: 'password', placeholder: 'password' },
-    { label: 'Password*', type: 'password', placeholder: 'password' },
+    { label: 'Email Address*', type: 'text', placeholder: 'hello@alignui.com',inputFoooter:"Enter the email with which you've registered." },
+
 
 
   ];
@@ -37,9 +36,15 @@ const index = () => {
             </div>
 
             <div className="second">
-              <Badge img={User} span={'Login in your account'} p={'Enter your details to login.'} />
+              <Badge img={User} span={'Reset Password'} p={'Enter your email to reset your password.'} />
+              <hr
+              style={{
+                color: 'rgba(226, 228, 233, 1)',
+                width: '80%',
+                margin: 0,
+              }}
+            />              <Form fields={formFields} />
               <div className="form">
-              <Form fields={formFields} />
               </div>
             </div>
             <div className="third">
