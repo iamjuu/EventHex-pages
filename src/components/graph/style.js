@@ -26,6 +26,27 @@ padding-top: 10px;
     }
   }
 `;
+export const Header = styled.div`
+width: 100%;
+display: flex;
+font-family: sans-serif;
+.header-left{
+padding: 10px;
+  display: flex;
+  font-size: 16px;
+  gap: 10px;
+align-items: center;
+width: 50%;
+}
+
+.header-right{
+  padding: 10px;
+  display: flex;
+align-items: center;
+justify-content: end;
+  width: 50%;
+}
+`
 
 export const ProgressSection = styled.div`
   position: relative;

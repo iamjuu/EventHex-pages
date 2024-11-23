@@ -45,7 +45,7 @@ const index = () => {
           </div>
 
           <div className="right">
-            <RightSide />
+            <RightSide   />
           </div>
         </Main>
       </ContainerWrap>
