@@ -10,10 +10,12 @@ const index = () => {
 
   const formFields = [
     { label: 'Email Address*', type: 'text', placeholder: 'hello@alignui.com',inputFoooter:"Enter the email with which you've registered." },
-
-
-
   ];
+
+  const footerData = {
+    h1: "Stay in Control of Your Time Off",
+    p: "Track your time off balance and manage requests with the Time Off widget, ensuring a stress-free experience.",
+  };
   return (
     <Container>
       <ContainerWrap>
@@ -53,8 +55,16 @@ const index = () => {
           </div>
 
           <div className="right">
-            <RightSide   />
-          </div>
+
+<RightSide   />
+ <div className="right-section-footer">
+<span style={{fontSize:'24px'}}>{footerData.h1}</span>
+<p style={{color:'rgba(82, 88, 102, 1)',fontSize:'16px'}}>
+{footerData.p}
+</p>
+</div>
+
+</div>
         </Main>
       </ContainerWrap>
     </Container>

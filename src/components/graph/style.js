@@ -5,17 +5,15 @@ export const Card = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   justify-content: center;
   align-items: center;
-  max-width: 400px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   .btn-section {
     width: 100%;
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    /* gap: 16px; */
     .first {
       width: 100%;
       display: flex;
@@ -30,7 +28,6 @@ padding-top: 10px;
         gap: 10px;
         display: flex;
         padding: 5px;
-        /* justify-content: center; */
         align-items: center;
       }
       .btn{

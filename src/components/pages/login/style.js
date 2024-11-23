@@ -2,13 +2,16 @@ import styled from "styled-components";
 export const Main = styled.div`
   width: 100%;
   display: flex;
+  justify-content: center;
+  
+  align-items: center;
   flex-wrap: wrap;
 
 
   .left {
     width: 40%;
     display: flex;
-    gap: 40px;
+    gap: 60px;
     flex-direction: column;
   
 
@@ -38,10 +41,8 @@ export const Main = styled.div`
       width: 100%;
 justify-content: center;
       display: flex;
-      gap: 20px;
-      align-items: center;
+      gap: 10px;
       flex-direction: column;
-      /* background-color: red; */
       .user-div{
         display: flex;
         justify-content: center;
@@ -64,7 +65,7 @@ justify-content: center;
   
   
       @media (max-width:768px) {
-        width: 100%;
+        width: 90%;
         
       }
   }
@@ -72,8 +73,24 @@ justify-content: center;
   .right {
     width: 60%;
     display: flex;
+    border-radius: 16px;
+    background-color: rgba(246, 248, 250, 1);
+    padding-top: 100px;
+    gap: 10px;
+    font-family: sans-serif;
     justify-content: center;
+    /* background-color: #525866; */
+    flex-direction: column;
     align-items: center;
+    .right-section-footer{
+      padding: 10px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
     @media (max-width:768px) {
       width: 100%;
       

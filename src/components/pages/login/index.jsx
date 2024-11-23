@@ -21,6 +21,11 @@ const index = () => {
       },
     },
   ];
+  const footerData = {
+    h1: "Stay in Control of Your Time Off",
+    p: "Track your time off balance and manage requests with the Time Off widget, ensuring a stress-free experience.",
+  };
+
   
   return (
     <Container>
@@ -50,12 +55,20 @@ const index = () => {
               </div>
             </div>
             <div className="third">
-              <FromFooter />
+              <FromFooter  />
             </div>
           </div>
 
           <div className="right">
+
             <RightSide   />
+             <div className="right-section-footer">
+        <span style={{fontSize:'24px'}}>{footerData.h1}</span>
+        <p style={{color:'rgba(82, 88, 102, 1)',fontSize:'16px'}}>
+{footerData.p}
+        </p>
+      </div>
+
           </div>
         </Main>
       </ContainerWrap>
