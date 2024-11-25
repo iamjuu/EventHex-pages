@@ -11,7 +11,7 @@ export const Main = styled.div`
   .left {
     width: 40%;
     display: flex;
-    gap: 20px;
+    gap: 4  0px;
     justify-content: center;
     flex-direction: column;
   
@@ -81,7 +81,7 @@ justify-content: center;
     border-radius: 16px;
     background-color: rgba(246, 248, 250, 1);
     padding-top: 100px;
-    gap: 10px;
+    gap: 40px;
     font-family: sans-serif;
     justify-content: center;
     flex-direction: column;
@@ -128,7 +128,7 @@ justify-content: space-between;
 `
 export const FormContainer = styled.div`
 
-width:50%;
+width:40%;
 justify-content: center;
 display: flex;
 flex-direction: column;

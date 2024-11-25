@@ -1,11 +1,38 @@
 import React from 'react';
-import {Input} from './style'
-const index = ({type,bg,width,fontsize,radius,border,placeholder}) => {
+import { Input } from './style';
+
+const Index = ({ 
+  type, 
+  bg, 
+  width, 
+  fontsize, 
+  radius, 
+  border, 
+  placeholder, 
+  borderTopRightradius, 
+  borderBottomRightradius ,
+  borderTopLeftradius,
+  borderBottomLeftradius,
+  borderRight
+}) => {
   return (
-<>
-<Input type={type}  placeholder={placeholder} bg={bg}  width={width}  border={border}  fontsize={fontsize}  radius={radius}/>
-</>
+    <>
+      <Input
+        type={type}
+        placeholder={placeholder}
+        borderRight={borderRight}
+        bg={bg}
+        width={width}
+        border={border}
+        fontsize={fontsize}
+        radius={radius}
+        borderTopRightradius={borderTopRightradius} 
+        borderTopLeftradius={borderTopLeftradius}
+        borderBottomRightradius={borderBottomRightradius}
+        borderBottomLeftradius={borderBottomLeftradius}
+      />
+    </>
   );
 }
 
-export default index;
+export default Index;

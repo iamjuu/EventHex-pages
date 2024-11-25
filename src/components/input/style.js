@@ -1,19 +1,14 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Input = styled.input`
-  box-sizing: border-box;
-  padding: 8px;
-  background-color: ${(props) => props.bg || "transparent"};
-  color: ${(props) => props.color || ""};
-  border: ${(props) => props.border || "none"};
-  width: ${(props) => props.width || ""};
-  font-size: ${(props) => props.fontsize || ""};
-  border-radius: ${(props) => props.radius || "0"};
-  position: relative;
-  padding-left: ${(props) => (props.icon ? "35px" : "8px")}; 
-
-  &::placeholder {
-    color: #dcdcdc; 
-    padding-left: ${(props) => (props.icon ? "35px" : "15px")}; 
-  }
+  background-color: ${(props) => props.bg || 'transparent'};
+  width: ${(props) => props.width || 'auto'};
+  border: ${(props) => props.border || 'none'};
+  font-size: ${(props) => props.fontsize || '16px'};
+  border-radius: ${(props) => props.radius || '0'};
+  border-top-right-radius: ${(props) => props.borderTopRightradius || '0'};
+  border-top-left-radius: ${(props) => props.borderTopLeftradius || '0'};
+  border-bottom-right-radius: ${(props) => props.borderBottomRightradius || '0'};
+  border-bottom-left-radius: ${(props) => props.borderBottomLeftradius || '0'};
+  border-right:${(props)=>props.borderRight||''} ;
 `;
