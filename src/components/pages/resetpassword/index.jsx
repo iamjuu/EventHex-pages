@@ -13,15 +13,7 @@ const index = () => {
     { label: 'New Password*', type: 'password', placeholder: 'password'},
     { label: 'Confirm New Password*', type: 'password', placeholder: 'password' },
    
-    {
-      type: 'checkbox',
-      label: 'Keep me logged in',
-      additionalElement: {
-        type: 'link',
-        label: 'Forgot password?',
-        link: '/reset-password',
-      },
-    },
+ 
   ];
   const btnName = 'login'
   const footerData = {

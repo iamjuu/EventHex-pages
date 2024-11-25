@@ -20,9 +20,9 @@ background-color: ${(props)=> props.bg||''
 
 export const FreeContainer = styled.div`
 width: ${(props)=>props.width};
-display: flex;
-
-/* justify-content: space-between; */
+justify-content: center;
 align-items: center;
+flex-direction: column;
+display: flex;
 background-color: ${(props)=> props.bg||''};
 `

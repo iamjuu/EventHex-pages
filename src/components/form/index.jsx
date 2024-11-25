@@ -45,21 +45,59 @@ const index = ({ fields, onSubmit, btnName, additionallabel }) => {
               )}
 
               {/* Input Field */}
-              <Input
-                type={field.type}
-                placeholder={field.placeholder}
-                width="100%"
-                fontsize="14px"
-                border="1px solid #DADCE0"
-                radius="10px"
-                style={{
-                  paddingLeft: field.type === 'password' || field.type === 'text' ? '35px' : '8px', // Icon padding
-                }}
-              />
+              {field.type !== 'checkbox' ? (
+                <Input
+                  type={field.type}
+                  placeholder={field.placeholder}
+                  width="100%"
+                  fontsize="14px"
+                  border="1px solid #DADCE0"
+                  radius="10px"
+                  style={{
+                    paddingLeft: field.type === 'password' || field.type === 'text' ? '35px' : '8px', // Icon padding
+                  }}
+                />
+              ) : (
+                <div
+                  style={{
+                    width:'100%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                  }}
+                >
+                  {/* Checkbox Input */}
+                  <Input
+                    type="checkbox"
+                    width="20px"
+                    height="20px"
+                    border="1px solid #DADCE0"
+                    radius="4px"
+                  />
+
+                  {/* Label for Checkbox */}
+                  <span>{field.label}</span>
+
+                  {/* Additional Element (e.g., Forgot Password Link) */}
+                  {field.additionalElement?.type === 'link' && (
+                    <a
+                      href={field.additionalElement.link}
+                      style={{
+                        marginLeft: 'auto',
+                        color: '#375DFB',
+                        textDecoration: 'none',
+                        fontSize: '12px',
+                      }}
+                    >
+                      {field.additionalElement.label}
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
 
             {/* Additionallabel Below Input */}
-            {additionallabel?.label && (
+            {additionallabel?.label && field.type !== 'checkbox' && (
               <div style={{ marginTop: '8px', color: '#6B7280', fontSize: '12px' }}>
                 <span>{additionallabel.label}</span>
               </div>

@@ -102,3 +102,45 @@ justify-content: center;
 
   }
 `;
+
+export  const Header = styled.div`
+width: 100%;
+.first{
+  width: 30%;
+  align-items: center;
+  display: flex;
+justify-content: space-between;
+.logo{
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  width: 100%;
+}
+
+.register-div{
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+ 
+}
+}
+`
+export const FormContainer = styled.div`
+
+width:50%;
+justify-content: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+@media (max-width:768px) {
+  width: 100%;
+  
+}
+`
+
+export const FormFooterContianer = styled.div`
+
+width: 100%;
+
+` 

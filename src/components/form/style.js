@@ -22,7 +22,7 @@ font-family: sans-serif;
 export const FromContainer = styled.div`
 display: flex;
 width: 80%;
-gap: 10px;
+gap: 1px;
 flex-direction: column;
 justify-content: center;
 .form-footer{
