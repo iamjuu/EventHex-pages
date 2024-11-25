@@ -12,7 +12,6 @@ export const Main = styled.div`
     width: 40%;
     display: flex;
     gap: 20px;
-
     justify-content: center;
     flex-direction: column;
   
@@ -85,7 +84,6 @@ justify-content: center;
     gap: 10px;
     font-family: sans-serif;
     justify-content: center;
-    /* background-color: #525866; */
     flex-direction: column;
     align-items: center;
     .right-section-footer{

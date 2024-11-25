@@ -1,25 +1,35 @@
+
 import { Container, ContainerWrap } from "../style";
 import { Main } from "../login/style";
 import { Logo, Lock } from "../../../assets";
 import RegisterBtn from "../../../components/button";
 import Form from "../../../components/form";
 import Badge from "../../badge";
-import FromFooter from "../../form/formFooter";
+import FormFooter from "../../form/formFooter";
 import RightSide from "../../sideSceion";
 const index = () => {
 
-  const formFields = [
-    { label: 'Email Address*', type: 'text', placeholder: 'hello@alignui.com' },
+  const fields = [
+    { label: 'New Password*', type: 'password', placeholder: 'password'},
+    { label: 'Confirm New Password*', type: 'password', placeholder: 'password' },
+   
+    {
+      type: 'checkbox',
+      label: 'Keep me logged in',
+      additionalElement: {
+        type: 'link',
+        label: 'Forgot password?',
+        link: '/reset-password',
+      },
+    },
   ];
-  const btnName= 'Reset Password'
-  const additionallabel = {
-    label: "Enter the email with which you've registered.",
-  };
-  
+  const btnName = 'login'
   const footerData = {
     h1: "Stay in Control of Your Time Off",
     p: "Track your time off balance and manage requests with the Time Off widget, ensuring a stress-free experience.",
   };
+
+  
   return (
     <Container>
       <ContainerWrap>
@@ -42,36 +52,27 @@ const index = () => {
             </div>
 
             <div className="second">
-              <Badge img={Lock} span={'Reset Password'} p={'Enter your email to reset your password.'} />
-              <div  className="line">
-              <hr
-              style={{
-                color: 'rgba(226, 228, 233, 1)',
-                width: '60%',
-                margin: 0,
-              }}
-            />  
-              </div>
-                          <Form fields={formFields}  btnName={btnName} additionallabel={additionallabel}/>
+              <Badge img={Lock} span={'Reset Password'} p={'Enter your details to login.'} />
               <div className="form">
+              <Form fields={fields}  btnName={btnName}/>
               </div>
             </div>
             <div className="third">
-              <FromFooter />
+              <FormFooter  />
             </div>
           </div>
 
           <div className="right">
 
-<RightSide   />
- <div className="right-section-footer">
-<span style={{fontSize:'24px'}}>{footerData.h1}</span>
-<p style={{color:'rgba(82, 88, 102, 1)',fontSize:'16px'}}>
+            <RightSide   />
+             <div className="right-section-footer">
+        <span style={{fontSize:'24px'}}>{footerData.h1}</span>
+        <p style={{color:'rgba(82, 88, 102, 1)',fontSize:'16px'}}>
 {footerData.p}
-</p>
-</div>
+        </p>
+      </div>
 
-</div>
+          </div>
         </Main>
       </ContainerWrap>
     </Container>
