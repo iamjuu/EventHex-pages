@@ -4,13 +4,14 @@ import { Logo, User } from "../../../assets";
 import RegisterBtn from "../../../components/button";
 import Form from "../../../components/form";
 import Badge from "../../badge";
-import FromFooter from "../../form/formFooter";
+import FormFooter from "../../form/formFooter";
 import RightSide from "../../sideSceion";
 const index = () => {
 
   const fields = [
     { label: 'Email Address*', type: 'text', placeholder: 'hello@alignui.com' },
     { label: 'Password*', type: 'password', placeholder: 'password' },
+   
     {
       type: 'checkbox',
       label: 'Keep me logged in',
@@ -21,6 +22,7 @@ const index = () => {
       },
     },
   ];
+  const btnName = 'login'
   const footerData = {
     h1: "Stay in Control of Your Time Off",
     p: "Track your time off balance and manage requests with the Time Off widget, ensuring a stress-free experience.",
@@ -51,11 +53,11 @@ const index = () => {
             <div className="second">
               <Badge img={User} span={'Login in your account'} p={'Enter your details to login.'} />
               <div className="form">
-              <Form fields={fields} />
+              <Form fields={fields}  btnName={btnName}/>
               </div>
             </div>
             <div className="third">
-              <FromFooter  />
+              <FormFooter  />
             </div>
           </div>
 

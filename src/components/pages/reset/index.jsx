@@ -11,6 +11,7 @@ const index = () => {
   const formFields = [
     { label: 'Email Address*', type: 'text', placeholder: 'hello@alignui.com',inputFoooter:"Enter the email with which you've registered." },
   ];
+  const btnName= 'reset'
 
   const footerData = {
     h1: "Stay in Control of Your Time Off",
@@ -39,13 +40,16 @@ const index = () => {
 
             <div className="second">
               <Badge img={User} span={'Reset Password'} p={'Enter your email to reset your password.'} />
+              <div  className="line">
               <hr
               style={{
                 color: 'rgba(226, 228, 233, 1)',
-                width: '80%',
+                width: '60%',
                 margin: 0,
               }}
-            />              <Form fields={formFields} />
+            />  
+              </div>
+                          <Form fields={formFields}  btnName={btnName}/>
               <div className="form">
               </div>
             </div>

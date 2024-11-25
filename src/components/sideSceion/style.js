@@ -3,7 +3,6 @@ export const Main = styled.div`
 width: 50%;
 justify-content: center;
 padding: 10px;
-/* align-items: center/; */
 display: flex;
 flex-direction: column;
 gap: 50px;

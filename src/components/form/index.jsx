@@ -8,7 +8,7 @@ import { FcGoogle } from "react-icons/fc";
 import { FaLock } from "react-icons/fa"; // Lock Icon
 import { AiOutlineMail } from "react-icons/ai"; // Message Icon
 
-const index = ({ fields, onSubmit }) => {
+const index = ({ fields, onSubmit ,inputFoooter,btnName}) => {
   return (
     <Form onSubmit={onSubmit}>
     <FromContainer>
@@ -58,6 +58,7 @@ const index = ({ fields, onSubmit }) => {
                   paddingLeft: field.type === 'password' || field.type === 'text' ? '35px' : '8px', // Icon padding
                 }}
               />
+              
             ) : (
               <div
                 style={{
@@ -67,6 +68,7 @@ const index = ({ fields, onSubmit }) => {
                   width: '100%',
                 }}
               >
+
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <Input
                     type="checkbox"
@@ -97,7 +99,7 @@ const index = ({ fields, onSubmit }) => {
           <LoginBtn
             padding="10px"
             fontsize="14px"
-            btnName="Login"
+            btnName={btnName}
             bg="#375DFB"
             radius="8px"
             width="100%"

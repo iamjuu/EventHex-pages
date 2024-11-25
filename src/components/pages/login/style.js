@@ -11,7 +11,9 @@ export const Main = styled.div`
   .left {
     width: 40%;
     display: flex;
-    gap: 60px;
+    gap: 20px;
+
+    justify-content: center;
     flex-direction: column;
   
 
@@ -41,8 +43,12 @@ export const Main = styled.div`
       width: 100%;
 justify-content: center;
       display: flex;
-      gap: 10px;
+      gap: 20px;
       flex-direction: column;
+      .line{
+        display: flex;
+        justify-content: center;
+      }
       .user-div{
         display: flex;
         justify-content: center;
