@@ -46,17 +46,21 @@ const index = ({ fields, onSubmit, btnName, additionallabel }) => {
 
               {/* Input Field */}
               {field.type !== 'checkbox' ? (
-                <Input
-                  type={field.type}
-                  placeholder={field.placeholder}
-                  width="100%"
-                  fontsize="14px"
-                  border="1px solid #DADCE0"
-                  radius="10px"
-                  style={{
-                    paddingLeft: field.type === 'password' || field.type === 'text' ? '35px' : '8px', // Icon padding
-                  }}
-                />
+           <Input
+           iconPadding="45px" 
+           borderTopLeftradius="10px"
+           borderTopRightradius="10px"
+           borderBottomLeftradius="10px"
+           borderBottomRightradius="10px"
+           type={field.type}
+           placeholder={field.placeholder}
+           width="100%"
+           fontsize="14px"
+           border="1px solid #DADCE0"
+           radius="10px"
+         />
+         
+             
               ) : (
                 <div
                   style={{

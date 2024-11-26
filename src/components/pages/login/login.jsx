@@ -7,11 +7,23 @@ import { Header ,FormFooterContianer} from "./style";
 import Badge from "../../badge";
 import Form from "../../form";
 import FormFooter from '../../form/formFooter'
+import { FaLock } from "react-icons/fa"; // Lock Icon
+import { AiOutlineMail } from "react-icons/ai"; // Mail Icon
 const login = () => {
-  const fields = [
-    { label: "Email Address*", type: "text", placeholder: "hello@alignui.com" },
-    { label: "Password*", type: "password", placeholder: "password" },
 
+  const fields = [
+    { 
+      label: "Email Address*", 
+      type: "text", 
+      placeholder: "hello@alignui.com", 
+      icon: <AiOutlineMail /> 
+    },
+    { 
+      label: "Password*", 
+      type: "password", 
+      placeholder: "password", 
+      icon: <FaLock /> 
+    },
     {
       type: "checkbox",
       label: "Keep me logged in",
@@ -22,6 +34,7 @@ const login = () => {
       },
     },
   ];
+  
   const btnName = "login";
   return (
     <Container>

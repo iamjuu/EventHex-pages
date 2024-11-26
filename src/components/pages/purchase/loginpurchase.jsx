@@ -6,6 +6,7 @@ import Formfooter from "../../form/formFooter";
 import  CouponInput  from "../../input";
 import CouponBtn from '../../button'
 import Form from "../../form";
+import PaymentSection from '../../paymentCard'
 const LoginPurchase = () => {
   const fields = [
     { label: "New Password*", type: "password", placeholder: "password" },
@@ -28,8 +29,10 @@ const LoginPurchase = () => {
   return (
     <Container>
       <ContainerWrap style={{ flexDirection: "column" }}>
-        <Logosection>
-          <div >
+   
+
+       <Logosection>
+          <div  style={{padding:'10px'}}>
           <img src={Logo} alt="" />
           </div>
           <div className="content">
@@ -40,6 +43,9 @@ const LoginPurchase = () => {
 
         <Main>
           <Left>
+            <div style={{    width:'90%'}}>
+
+           
             <div className="first">
               <div className="title">
                 <h1>{header[0].title}</h1>
@@ -51,29 +57,20 @@ const LoginPurchase = () => {
               </div>
             </div>
             <Form fields={fields} btnName={btnName} />
+            </div>
           </Left>
 
           <Right>
-            <div className="main">
-<div className="first">
-<div style={{display:'flex'
-    ,flexDirection:'column'
-}}>
-    <h5>Payment Summary</h5>
-    <p>Review your payment details</p>
-</div>
 
-<div style={{display:'flex'}}> <CouponInput borderRight={'none'} borderTopLeftradius={'10px'}  borderBottomLeftradius={'10px'} width={'100%'}   border={' 1px solid rgba(226, 228, 233, 1)'}/>  <CouponBtn  padding={'7px'}   borderBottomRightradius={'10px'} borderTopRightradius={'10px'}  bg={'black'} color={'white'} btnName={'Apply'}/> </div>
-<div></div>
 
-</div>
-            </div>
+<PaymentSection/>
           </Right>
         </Main>
         {/* <Footer>
 <Formfooter/>
       </Footer> */}
       </ContainerWrap>
+ 
     </Container>
   );
 };

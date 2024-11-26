@@ -1,8 +1,8 @@
 import styled from "styled-components";
 export const Logosection = styled.div`
   width: 100%;
-  /* padding: 10px; */
   display: flex;
+  /* padding: 10px; */
   flex-direction: column;
   .content {
     display: flex;
@@ -29,26 +29,31 @@ export const Footer = styled.div`
 
 export const Main = styled.div`
   width: 100%;
-  /* background-color: rebeccapurple; */
   display: flex;
   flex-wrap: wrap;
 `;
 
 export const Left = styled.div`
   margin-top: 50px;
-  /* background-color: red; */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
   width: 50%;
 
   .first {
     width: 100%;
     /* background-color: red; */
+    margin-bottom: 30px;
+
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     .title {
-      /* background-color: gray; */
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -62,14 +67,16 @@ export const Left = styled.div`
 `;
 export const Right = styled.div`
 font-family: sans-serif;
-  background-color: red;
+padding-top: 50px;
+  /* background-color: red; */
   width: 50%;
   .main {
-    background-color: blue;
 
     width: 80%;
     .first {
-
+display: flex;
+flex-direction: column;
+gap: 10px;
         padding: 10px;
       h5 {
         font-size: 16px;
@@ -78,6 +85,25 @@ font-family: sans-serif;
         font-size: 14px;
         color: rgba(82, 88, 102, 1);
       }
+    }
+
+    .second{
+    width: 100%;
+    display: flex;
+.left{
+width: 50%;
+background-color: aliceblue;
+p{
+  color: rgba(82, 88, 102, 1);
+  font-size: 14px;
+}
+}
+.right{
+  display: flex;
+  justify-content: end;
+  width: 50%;
+}
+
     }
   }
 

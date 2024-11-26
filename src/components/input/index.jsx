@@ -2,6 +2,7 @@ import React from 'react';
 import { Input } from './style';
 
 const Index = ({ 
+  padding,
   type, 
   bg, 
   width, 
@@ -13,11 +14,14 @@ const Index = ({
   borderBottomRightradius ,
   borderTopLeftradius,
   borderBottomLeftradius,
-  borderRight
+  borderRight,
+  placeholderPadding
 }) => {
   return (
     <>
       <Input
+      placeholderPadding={placeholderPadding}
+      padding={padding}
         type={type}
         placeholder={placeholder}
         borderRight={borderRight}
