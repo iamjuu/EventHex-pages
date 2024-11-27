@@ -40,11 +40,11 @@ const PricingTable = () => {
         "IP Monitoring",
         "Backlink Monitoring",
       ],
-      highlight: true,
+      highlight: false,
       btnName: 'Choose Plan'
     },
     {
-      name: "ENTERPRISE",
+      name: "BASIC",
       price: "$119",
       discount: "15% Off",
       description: "Limited features for budget-conscious users.",
@@ -67,7 +67,12 @@ const PricingTable = () => {
   return (
     <Container>
       {plans.map((plan, index) => (
-        <Plan key={index} isHighlighted={plan.highlight} index={index}>
+        <Plan
+          key={index}
+          isHighlighted={plan.highlight}
+          index={index}
+          className={index === 1 ? "hover-blue" : ""}
+        >
           <PlanHeader>
             <HeaderTop>
               <PlanBadge>{plan.name}</PlanBadge>

@@ -207,7 +207,7 @@ const Container = styled.div`
 
 const SelectBox = styled.div`
   width: 100%;
-  background-color: #dc8a8a;
+  /* background-color: #dc8a8a; */
   /* border-bottom: 1px  solid #e5e7eb; */
   /* border-radius: 8px; */
   cursor: pointer;
