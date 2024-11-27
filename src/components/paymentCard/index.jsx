@@ -22,8 +22,10 @@ const PaymentSummary = () => {
         <CouponInput placeholder="Enter Code" />
         <ApplyButton>Apply</ApplyButton>
       </InputGroup>
+      
       <PlanDetails>
         <PlanTitle>EventHex - Basic Plan</PlanTitle>
+        <div style={{display:'flex ',justifyContent:'space-between' }}>  <p style={{color:'rgba(82, 88, 102, 1)',fontSize:'14px'}}>$9.99 / mo  x  12 months</p><span style={{fontSize:'14px'}}>$129.88/yr</span>  </div>
         <BenefitList>
           <li>
             <svg
@@ -74,7 +76,7 @@ const PaymentSummary = () => {
           <span>Subtotal</span>
           <strong>$129.88</strong>
         </div>
-        <div>
+        <div  style={{borderBottom:'1px solid rgba(226, 228, 233, 1)' }}>
           <span>Discount</span>
           <strong>-$10.00</strong>
         </div>
@@ -84,7 +86,7 @@ const PaymentSummary = () => {
         </div>
       </PriceBreakdown>
       <Paybtn btnName={'PayNow'}  width={'100%'}  radius={'10px'} color={'rgba(205, 208, 213, 1)'} fontsize={'14px'} bg={'rgba(246, 248, 250, 1)'}/>
-<div style={{  display:'flex',  justifyContent:'center'}}>
+<div style={{  display:'flex',  justifyContent:'center',  marginTop:'10px'}}>
 
 
       <SecureText>

@@ -24,7 +24,7 @@ export const Logosection = styled.div`
 export const Footer = styled.div`
   padding: 10px;
   width: 100%;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
 `;
 
 export const Main = styled.div`

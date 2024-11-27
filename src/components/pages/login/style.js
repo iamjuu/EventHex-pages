@@ -11,7 +11,7 @@ export const Main = styled.div`
   .left {
     width: 40%;
     display: flex;
-    gap: 4  0px;
+    gap: 40px;
     justify-content: center;
     flex-direction: column;
   

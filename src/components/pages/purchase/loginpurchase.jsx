@@ -66,9 +66,9 @@ const LoginPurchase = () => {
 <PaymentSection/>
           </Right>
         </Main>
-        {/* <Footer>
+        <Footer>
 <Formfooter/>
-      </Footer> */}
+      </Footer>
       </ContainerWrap>
  
     </Container>

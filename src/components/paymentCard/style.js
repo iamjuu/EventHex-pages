@@ -69,6 +69,7 @@ export const BenefitList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
+  border-bottom: 1px solid rgba(226, 228, 233, 1);
 
   li {
     display: flex;
@@ -88,7 +89,11 @@ export const BenefitList = styled.ul`
 `;
 
 export const PriceBreakdown = styled.div`
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 
   div {
     display: flex;
@@ -98,6 +103,9 @@ export const PriceBreakdown = styled.div`
 
     &.total {
       font-size: 16px;
+      display: flex;
+      /* flex-direction: column; */
+      
       font-weight: bold;
     }
 

@@ -56,7 +56,7 @@ const index = () => {
               <Form fields={fields}  btnName={btnName}/>
               </div>
             </div>
-            <div className="third">
+            <div className="third"  >
               <FormFooter  />
             </div>
           </div>
