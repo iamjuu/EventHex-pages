@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Header = styled.div`
 width: 100%;
 font-family: sans-serif;
-/* background-color: blue; */
 .logo-div{
   padding: 10px;
 }
@@ -32,29 +31,54 @@ width: 100%;
 export const Section = styled.div`
 width: 100%;
 flex-wrap: wrap;
-background-color: red;
+margin-top: 30px;
+/* background-color: red; */
+
 display: flex;
 
 `
 
 export const Left = styled.div`
-width: 50%;
-background-color: blue;
+width: 48%;
+font-family: sans-serif;
+padding: 10px;
+justify-content: center;
 display: flex;
-/* justify-content: center; */
-/* align-items: center; */
-.form{
-  background-color: yellow;
+;
+border-radius: 10px;
+
+.form-title{
+  border: 1px solid rgba(226, 228, 233, 1);
+padding: 15px;
   width: 80%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width:500px){
+    width: 100%;
+    
+  }
 }
 @media (max-width: 768px) {
   width: 100%;
   
 }
+.form-content{
+  width: 100%;
+}
 `
 
 export const Right = styled.div`
 font-family: sans-serif;
-width: 50%;
-
+width: 48%;
+@media (max-width:768px) {
+  width: 100%;
+  
+}
 `
+
+export const Footer = styled.div`
+  padding: 10px;
+  width: 100%;
+`;

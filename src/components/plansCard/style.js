@@ -37,7 +37,7 @@ export const Plan = styled.div`
   /* Add the hover effect directly here for index 1 */
   &:hover {
     background-color: ${({ index }) => index === 1 ? "#007bff" : "transparent"};
-    color: ${({ index }) => index === 1 ? "white" : "inherit"};
+    color: ${({ index }) => index === 1 ? "white" : "black"};
   }
 `;
 

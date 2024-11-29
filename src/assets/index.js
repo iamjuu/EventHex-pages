@@ -5,9 +5,11 @@ import Close from './close-circle-fill.png'
 import True from './select-box-circle-fill.png'
 import Clock from './clock.png'
 import Lock from './door-lock-line.svg'
+import Three from './Email Address.svg'
 
  
 export{
+    Three,
     Google,
     Lock,
     Logo,
