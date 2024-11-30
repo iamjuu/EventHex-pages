@@ -9,6 +9,7 @@ import Loginpurchase from "./components/pages/purchase";
 import Plans from './components/pages/plans'
 import PaymnetComplete from './components/pages/paymentComplete'
 import PurchaseComplete  from './components/pages/purchaseComplete'
+import Otp from './components/pages/otp'
 function App() {
   return (
     <Router>
@@ -16,6 +17,7 @@ function App() {
       <Route path="/signup" element={<Signup/>} />
         <Route path="/login" element={<Login />} />
         <Route path="/reset" element={<Reset />} />
+        <Route  path="/otp" element={<Otp/>}/>
         <Route path="/reset-password" element={<Resetpaasord />} />
         <Route path="/login-page" element={<LoginPage />} />
         <Route path="/login-purchase" element={<Loginpurchase />} />
