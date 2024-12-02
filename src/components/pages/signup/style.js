@@ -11,7 +11,8 @@ export const Main = styled.div`
   .left {
     width: 40%;
     display: flex;
-    gap: 40px;
+    font-family: sans-serif;
+    /* gap: 40px; */
     justify-content: center;
     flex-direction: column;
   
@@ -39,40 +40,56 @@ export const Main = styled.div`
       }
     }
     .second {
+        
       width: 100%;
 justify-content: center;
       display: flex;
       gap: 20px;
       flex-direction: column;
-      .line{
-        display: flex;
-        justify-content: center;
-      }
-      .user-div{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-          h1{
-            font-family: sans-serif;
-            font-size: 24px;
-          }
-          p{
-            font-family: sans-serif;
-            font-size: 16px;
-            color: #525866;
-          
-          
+      .form{
+        padding: 10px;
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            ul> li{
+list-style: none;
+            }
         }
+        .line-div{
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            justify-content: space-between;
+          
+        .first{
+                width: 32.3%;
+                height: 7px;
+                background-color: orange;
+                border-radius: 50px;
+            }
+          .second{
+                background-color: orange;
+                width: 32.3%;
+                height: 7px;
+                border-radius: 50px;
+            }
+       .third{
+                background-color: rgba(226, 228, 233, 1);
+                width: 32.3%;
+                height: 7px;
+                border-radius: 50px;
+            }
+        
+    }
       }
+
+      
     }
   
   
-      @media (max-width:768px) {
-        width: 90%;
-        
-      }
+   
   }
 
   .right {

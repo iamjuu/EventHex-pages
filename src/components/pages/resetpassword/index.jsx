@@ -1,6 +1,7 @@
+
 import { Container, ContainerWrap } from "../style";
-import { Main } from "./style";
-import { Logo, User } from "../../../assets";
+import { Main } from "../login/style";
+import { Logo, Lock } from "../../../assets";
 import RegisterBtn from "../../../components/button";
 import Form from "../../../components/form";
 import Badge from "../../badge";
@@ -9,18 +10,10 @@ import RightSide from "../../sideSceion";
 const index = () => {
 
   const fields = [
-    { label: 'Email Address*', type: 'text', placeholder: 'hello@alignui.com' },
-    { label: 'Password*', type: 'password', placeholder: 'password' },
+    { label: 'New Password*', type: 'password', placeholder: 'password'},
+    { label: 'Confirm New Password*', type: 'password', placeholder: 'password' },
    
-    {
-      type: 'checkbox',
-      label: 'Keep me logged in',
-      additionalElement: {
-        type: 'link',
-        label: 'Forgot password?',
-        link: '/reset-password',
-      },
-    },
+ 
   ];
   const btnName = 'login'
   const footerData = {
@@ -51,12 +44,12 @@ const index = () => {
             </div>
 
             <div className="second">
-              <Badge img={User} span={'Login in your account'} p={'Enter your details to login.'} />
+              <Badge img={Lock} span={'Reset Password'} p={'Enter your details to login.'} />
               <div className="form">
-              <Form fields={fields}   btnName={btnName}/>
+              <Form fields={fields}  btnName={btnName}/>
               </div>
             </div>
-            <div className="third"  >
+            <div className="third">
               <FormFooter  />
             </div>
           </div>
