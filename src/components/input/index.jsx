@@ -2,6 +2,8 @@ import React from 'react';
 import { Input } from './style';
 
 const Index = ({ 
+  onChange,
+  height,
   padding,
   type, 
   bg, 
@@ -20,9 +22,11 @@ const Index = ({
   return (
     <>
       <Input
+        onChange={onChange}
+      height={height}
       placeholderPadding={placeholderPadding}
       padding={padding}
-        type={type}
+       type={type}
         placeholder={placeholder}
         borderRight={borderRight}
         bg={bg}

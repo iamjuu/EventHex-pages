@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const Input = styled.input`
+height: ${(props)=>props.height||''};
   padding: ${(props) => props.padding || '5px'};
-  padding-left: ${(props) => props.iconPadding || '10px'}; /* Space for icons and placeholder */
+  /* padding-left: ${(props) => props.iconPadding || '10px'};  */
   background-color: ${(props) => props.bg || 'transparent'};
   width: ${(props) => props.width || 'auto'};
   border: ${(props) => props.border || 'none'};

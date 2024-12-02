@@ -33,6 +33,12 @@ export const Plan = styled.div`
     transform: scale(1);
     margin-bottom: 20px;
   }
+
+  /* Add the hover effect directly here for index 1 */
+  &:hover {
+    background-color: ${({ index }) => index === 1 ? "#007bff" : "transparent"};
+    color: ${({ index }) => index === 1 ? "white" : "black"};
+  }
 `;
 
 // Header Section
@@ -143,4 +149,3 @@ export const Button = styled.button`
     font-size: 18px;
   }
 `;
-

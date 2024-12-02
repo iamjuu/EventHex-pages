@@ -25,7 +25,7 @@ const index = ({ fields, onSubmit, btnName, additionallabel }) => {
 
             <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
               {/* Icon for text/password fields */}
-              {field.type === 'password' && (
+              {/* {field.type === 'password' && (
                 <FaLock
                   style={{
                     position: 'absolute',
@@ -42,7 +42,7 @@ const index = ({ fields, onSubmit, btnName, additionallabel }) => {
                     color: '#DADCE0',
                   }}
                 />
-              )}
+              )} */}
 
               {/* Input Field */}
               {field.type !== 'checkbox' ? (
