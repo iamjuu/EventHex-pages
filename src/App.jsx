@@ -10,6 +10,7 @@ import Plans from './components/pages/plans'
 import PaymnetComplete from './components/pages/paymentComplete'
 import PurchaseComplete  from './components/pages/purchaseComplete'
 import Otp from './components/pages/otp'
+import Home from './components/pages/home'
 function App() {
   return (
     <Router>
@@ -24,7 +25,7 @@ function App() {
         <Route path="/plans" element={<Plans />} />
         <Route  path="/payment-complete" element={<PaymnetComplete/>}/>
         <Route  path="/purchase-complete" element={<PurchaseComplete/>}/>
-        <Route path="/" element={<div>Home Page</div>} />
+        <Route path="/" element={<Home/>}/>
       </Routes>
     </Router>
   );
