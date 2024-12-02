@@ -24,6 +24,25 @@ const Index = () => {
     { title: "Enter Billing your Info" },
   ];
   const billingInfo = [{ title: "Enter Billing your Info" }];
+const [formData,setFormdata]=useState({
+  cardNumber:'',
+  expiryDate:'',
+  cvv:'',
+})
+
+const handleInputChange = (e) => {
+  const { name, value, type, checked } = e.target;
+  setFormdata((prev) => ({
+    ...prev,
+    [name]: type === "checkbox" ? checked : value,
+  }));
+};
+
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  console.log("Form Data:", formData);
+};
 
   return (
     <Container>
@@ -56,6 +75,7 @@ const Index = () => {
                   <div>
                     <ListCard title={billingInfo[0].title} />
                   </div>
+                  <form onSubmit={handleSubmit}>
                   <CardDetails className="card-details">
                     <div
                       style={{
@@ -82,6 +102,7 @@ const Index = () => {
                         >
                           <Label Name={"Card Number "} />
                           <Input
+                          onChange={handleInputChange}
                             placeholder={"0000 0000 0000 0000"}
                             borderTopLeftradius={"10px"}
                             borderTopRightradius={"10px"}
@@ -99,6 +120,7 @@ const Index = () => {
                           <div style={{ width: "50%" }}>
                             <Label Name={"Expire date "} />
                             <Input
+                              onChange={handleInputChange}
                               width={"80%"}
                               placeholder={"MM/YY"}
                               borderTopLeftradius={"10px"}
@@ -111,6 +133,7 @@ const Index = () => {
                           <div style={{ width: "50%" }}>
                             <Label Name={"CVC "} />
                             <Input
+                              onChange={handleInputChange}
                               placeholder={"CVC"}
                               width={"80%"}
                               borderTopLeftradius={"10px"}
@@ -132,7 +155,9 @@ const Index = () => {
                           width: "50%",
                         }}
                       >
-                        <Input width={"20%"} type={"checkbox"} />
+                        <Input  
+                                                  onChange={handleInputChange}
+                        width={"20%"} type={"checkbox"} />
                         <h5>razor pay</h5>
                       </div>
                       <div style={{ padding: "10px" }}>
@@ -149,6 +174,7 @@ const Index = () => {
                       />
                     </div>
                   </CardDetails>
+                  </form>
                 </div>
               </Left>
               <Right>

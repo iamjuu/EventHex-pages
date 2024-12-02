@@ -53,7 +53,7 @@ const index = () => {
             <div className="second">
               <Badge img={User} span={'Login in your account'} p={'Enter your details to login.'} />
               <div className="form">
-              <Form fields={fields}  btnName={btnName}/>
+              <Form fields={fields}   btnName={btnName}/>
               </div>
             </div>
             <div className="third"  >
